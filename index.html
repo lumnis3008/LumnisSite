@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lumnis – Sistema de Agendamento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-950 to-black text-gray-200">
+  <header class="sticky top-0 bg-gray-900/80 backdrop-blur-md shadow-lg z-50">
+    <div class="container mx-auto px-4 flex items-center justify-between py-4">
+      <a href="#home" class="text-3xl font-extrabold tracking-wide text-purple-400">Lumnis</a>
+      <nav class="hidden md:flex gap-6 font-medium text-lg">
+        <a class="nav-link hover:text-purple-400 transition" href="#home">Home</a>
+        <a class="nav-link hover:text-purple-400 transition" href="#solucoes">Soluções</a>
+        <a class="nav-link hover:text-purple-400 transition" href="#sobre">Sobre</a>
+        <a class="nav-link hover:text-purple-400 transition" href="#portfolio">Portfólio</a>
+      </nav>
+      <button id="btnMenu" class="md:hidden p-2 text-white" aria-label="Abrir menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <nav id="mobileNav" class="md:hidden hidden flex-col gap-4 px-4 pb-4">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#solucoes">Soluções</a>
+      <a class="nav-link" href="#sobre">Sobre</a>
+      <a class="nav-link" href="#portfolio">Portfólio</a>
+    </nav>
+  </header>
+
+  <section id="home" class="relative text-center py-40 px-4 bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1556155092-8707de31f9c4?auto=format&fit=crop&w=1600&q=80')] bg-opacity-10">
+    <div class="backdrop-blur-sm bg-black/50 py-20 px-6 rounded-xl inline-block">
+      <h1 class="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg">Sistema de Agendamento</h1>
+      <p class="text-lg md:text-2xl text-gray-300 mt-4 max-w-3xl mx-auto">Agilidade, organização e praticidade para sua empresa com tecnologia de ponta.</p>
+      <a href="#sobre" class="mt-8 inline-block bg-purple-600 hover:bg-purple-700 transition px-8 py-4 rounded-full text-white font-semibold text-lg shadow-lg">Saiba mais</a>
+    </div>
+  </section>
+
+  <section id="solucoes" class="py-24 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16 text-white">Nossas Soluções</h2>
+      <div class="grid gap-10 md:grid-cols-3">
+        <div class="card bg-gradient-to-b from-gray-800 to-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-purple-700/50 transition">
+          <h3 class="text-2xl font-semibold text-purple-400 mb-3">Clínicas Médicas</h3>
+          <p>Agendamento de consultas, prontuários e alertas automáticos para clínicas e hospitais.</p>
+        </div>
+        <div class="card bg-gradient-to-b from-gray-800 to-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-purple-700/50 transition">
+          <h3 class="text-2xl font-semibold text-purple-400 mb-3">Salões de Beleza</h3>
+          <p>Gestão de serviços, profissionais e horários com notificações e histórico de clientes.</p>
+        </div>
+        <div class="card bg-gradient-to-b from-gray-800 to-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-purple-700/50 transition">
+          <h3 class="text-2xl font-semibold text-purple-400 mb-3">Consultorias</h3>
+          <p>Controle de sessões online, integração com pagamento e geração automática de relatórios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="py-28 bg-gray-950 text-center md:text-left">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl md:text-6xl font-bold text-purple-400 mb-12 text-center">Sobre Nós</h2>
+      <p class="max-w-5xl text-2xl leading-relaxed mx-auto text-gray-200 mb-16">
+        A <span class="font-semibold text-white">Lumnis</span> nasceu para transformar a maneira como empresas organizam seu tempo. Somos um time apaixonado por inovação, que desde 2020 entrega soluções personalizadas de agendamento para empresas de diversos setores. Com foco total em usabilidade e resultado, criamos ferramentas que ajudam negócios a escalar com eficiência.
+      </p>
+      <div class="grid gap-10 md:grid-cols-3">
+        <div class="p-6 bg-gray-800 rounded-xl shadow">
+          <h3 class="text-2xl text-purple-300 font-semibold mb-2">Missão</h3>
+          <p>Facilitar o dia a dia com tecnologia acessível e inteligente.</p>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-xl shadow">
+          <h3 class="text-2xl text-purple-300 font-semibold mb-2">Visão</h3>
+          <p>Ser referência em agendamento inteligente na América Latina.</p>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-xl shadow">
+          <h3 class="text-2xl text-purple-300 font-semibold mb-2">Valores</h3>
+          <p>Inovação contínua, ética, foco no cliente e impacto positivo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="py-28 bg-gradient-to-br from-gray-950 to-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16 text-white">Portfólio de Projetos</h2>
+      <div class="grid gap-12 md:grid-cols-3">
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-xl hover:scale-105 transition-transform">
+          <h3 class="text-xl font-semibold text-purple-300 mb-2">Agendamento Clínico</h3>
+          <p>Plataforma para clínicas com prontuário digital, lembretes automáticos e estatísticas avançadas.</p>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-xl hover:scale-105 transition-transform">
+          <h3 class="text-xl font-semibold text-purple-300 mb-2">Agenda de Beleza</h3>
+          <p>Sistema completo para salões, com múltiplos atendentes e controle financeiro integrado.</p>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-xl hover:scale-105 transition-transform">
+          <h3 class="text-xl font-semibold text-purple-300 mb-2">Consultoria Profissional</h3>
+          <p>Agenda online com links de reunião, automações e relatórios mensais para acompanhamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const btnMenu = document.getElementById('btnMenu');
+    const mobileNav = document.getElementById('mobileNav');
+    btnMenu.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+    });
+  </script>
+
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+      <p class="text-sm">&copy; 2025 Lumnis. Todos os direitos reservados.</p>
+      <div class="flex space-x-6">
+        <a href="https://www.instagram.com/lumnis2025/" target="_blank" class="hover:text-purple-400 transition">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61577128574061" target="_blank" class="hover:text-purple-400 transition">Facebook</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
